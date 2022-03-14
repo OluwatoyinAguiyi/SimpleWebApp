@@ -23,10 +23,6 @@ application {
     mainClass = "com.develogical.WebServer"
 }
 
-task stage(type: GradleBuild) {
-    tasks = ['clean', 'build']
-}
-
 jacoco {
     toolVersion = "0.8.7"
     reportsDirectory = file("$buildDir/customJacocoReportDir")
