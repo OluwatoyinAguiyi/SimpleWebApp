@@ -5,6 +5,7 @@ plugins {
     id 'jacoco'
 }
 
+version = '1.0-SNAPSHOT'
 repositories {
     mavenCentral()
 }
@@ -17,6 +18,9 @@ dependencies {
     testImplementation 'junit:junit:4.13.2'
     implementation 'com.google.guava:guava:30.1.1-jre'
 }
+
+task stage(dependsOn: ['build', 'clean'])
+build.mustRunAfter clean
 
 application {
     mainClass = "com.develogical.WebServer"
