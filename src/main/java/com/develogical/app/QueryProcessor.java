@@ -13,7 +13,7 @@ public class QueryProcessor {
                     "Wellington boots were used at the Battle of Waterloo.";
         }
         else if (query.toLowerCase().contains("another")){
-            return "Yet another response";
+            return "Yet another response...";
         }
         return "";
     }
