@@ -27,6 +27,11 @@ public class QueryProcessorTest {
     }
 
     @Test
+    public void knowsAboutWellington() throws Exception {
+        assertThat(queryProcessor.process("Wellington"), containsString("General in India, Spain and France, Prime Minister, Duke of Wellington"));
+    }
+
+    @Test
     public void canHandleAnotherTerm() {
         assertThat(queryProcessor.process("another"), containsString("another"));
     }

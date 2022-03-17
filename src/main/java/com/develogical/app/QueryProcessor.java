@@ -7,6 +7,10 @@ public class QueryProcessor {
                     "English poet, playwright, and actor, widely regarded as the greatest " +
                     "writer in the English language and the world's pre-eminent dramatist.";
         }
+        if (query.toLowerCase().contains("wellington")) {
+            return "General in India, Spain and France, Prime Minister, Duke of Wellington, " +
+                    "brother to the Earl of Mornington.";
+        }
         else if (query.toLowerCase().contains("another")){
             return "Yet another response";
         }
