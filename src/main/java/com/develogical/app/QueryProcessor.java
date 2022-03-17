@@ -9,7 +9,7 @@ public class QueryProcessor {
         }
         if (query.toLowerCase().contains("wellington")) {
             return "General in India, Spain and France, Prime Minister, Duke of Wellington, " +
-                    "brother to the Earl of Mornington.";
+                    "brother to the Earl of Mornington. Wellington boots were used at the Battle of Waterloo.";
         }
         else if (query.toLowerCase().contains("another")){
             return "Yet another response";
